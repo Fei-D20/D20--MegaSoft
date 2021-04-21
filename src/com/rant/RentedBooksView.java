@@ -4,10 +4,12 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
-import library.model.Book;
-import library.model.User;
+import com.model.Book;
+import com.model.User;
+import org.junit.Test;
 
 public class RentedBooksView {
+
     public static Pane getPane(User user) {
         Pane root = new Pane();
 

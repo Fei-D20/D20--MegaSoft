@@ -2,9 +2,6 @@ package com.model;
 
 import javafx.collections.ObservableList;
 
-import java.util.List;
-import java.util.Objects;
-
 /**
  * @ author Fei Gu
  * @ create 2021-04-21-13.15
@@ -15,7 +12,7 @@ import java.util.Objects;
 public class User implements UserInterface,BookRentInfoInterface{
     private String name;
     private String password;
-    ObservableList<Book> rentBook;
+    ObservableList<Book> rentedBooks;
 
     public User() {
     }
@@ -43,12 +40,12 @@ public class User implements UserInterface,BookRentInfoInterface{
         this.password = password;
     }
 
-    public ObservableList<Book> getRentBook() {
-        return rentBook;
+    public ObservableList<Book> getRentedBooks() {
+        return rentedBooks;
     }
 
-    public void setRentBook(ObservableList<Book> rentBook) {
-        this.rentBook = rentBook;
+    public void setRentedBooks(ObservableList<Book> rentedBooks) {
+        this.rentedBooks = rentedBooks;
     }
 
 
@@ -57,7 +54,7 @@ public class User implements UserInterface,BookRentInfoInterface{
         return "User{" +
                 "name='" + name + '\'' +
                 ", password='" + password + '\'' +
-                ", rentBook=" + rentBook +
+                ", rentBook=" + rentedBooks +
                 '}';
     }
 }
